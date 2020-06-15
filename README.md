@@ -1,4 +1,7 @@
-# Detect_Heavy_Drinking_Episodes
+# Detect_Heavy_Drinking_Episodes 
+### (replication of the model presented in the paper [1] )
+
+
 ## Objective:
    - Indication of what attribute(s) were being predicted
        1. Features: Three-axis time series accelerometer data
@@ -34,4 +37,7 @@ Order of functions to be run in the model.py script:
 - create_dataset(): This function will create the dataset by concatenating the csvs created in the above function.
 
 - model(): This function will initialize Random Forest Classifier with the best parameters that we tuned using GridSearchCV. The tuning of parameters is done in the hyperParamTuning() function created inside model() function. 
+
+## References:
+[1] hKillian, J. A., Passino, K. M., Nandi, A., Madden, D. R., & Clapp, J. Learning to Detect Heavy Drinking Episodes Using Smartphone Accelerometer Data.
 
