@@ -9,6 +9,21 @@
    - Indication of study's results
    
        The study decomposed each time series into 10 second windows and performed binary classification to predict if windows corresponded to an intoxicated participant (TAC >= 0.08) or sober participant (TAC < 0.08). The study tested several models and achieved a test accuracy of 77.5% with a random forest.
+       
+## Overview:
+The research paper mentioned takes into account the issue of heavy drinking among youngsters and aims to provide a solution by detecting heavy drinking episodes so that such occurrences can be controlled by intimidation at the right time. Also, it uses the easily available accelerometer data from the individual’s cell phone, thus avoiding any possible breach of privacy of the individual. And this model exhibits efficient usability, as a system/app can be developed using this to alert the individual during such heavy drinking episodes. 
+Preprocessing the time series data by feature extraction to make it usable for classification is one of the major tasks in this implementation. It gives an insight into how data with time and frequency components are handled in real life scenarios.
+The model we implemented gives an accuracy of 77.5%. We also learnt about the importance of tuning the parameters for getting a good working model. 
+
+
+## Results:
+       
+<img src = "./Screenshots/epochs.JPG" width = "500">
+Fig1. Hyper-parameter number of trees or estimators in the random forest classifier is plotted against the accuracy. It is clearly visible that using 700 trees to train and test the model gives the best accuracy i.e. approximately 0.76. So we choose the number of trees in the random forest to be 700.
+
+
+<img src = "./Screenshots/estimators.JPG" width = "500">
+Fig2. This graph depicts the accuracy of the model using the tuned parameters (number of estimators as 700, other parameters are mentioned in the model performance section) over 100 epochs. Over the 100 epochs, the accuracy is always around 0.71 - 0.77 giving the average accuracy of approximately 0.76
 
 
 ## Database Description:
